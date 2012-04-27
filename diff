@@ -1,0 +1,800 @@
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index ee8b5b9..55aa8bd 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -72,6 +72,18 @@
+                 <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+         </activity>
++        
++        <!-- CM System -->
++        <activity android:name="CMSystem"
++                android:label="@string/settings_ics_cmsystem"
++                >
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN" />
++                <action android:name="android.settings.CM_SYSTEM_SETTINGS" />
++                <category android:name="android.intent.category.DEFAULT" />
++                <category android:name="android.intent.category.VOICE_LAUNCH" />
++            </intent-filter>
++        </activity>
+ 
+         <!-- Wireless Controls -->
+ 
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_bluetooth_off.png b/res/drawable-mdpi/ic_appwidget_settings_bluetooth_off.png
+index 1314d3a..3583063 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_bluetooth_off.png and b/res/drawable-mdpi/ic_appwidget_settings_bluetooth_off.png differ
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_bluetooth_on.png b/res/drawable-mdpi/ic_appwidget_settings_bluetooth_on.png
+index 93c1f17..c01ffb2 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_bluetooth_on.png and b/res/drawable-mdpi/ic_appwidget_settings_bluetooth_on.png differ
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_brightness_auto.png b/res/drawable-mdpi/ic_appwidget_settings_brightness_auto.png
+index 6e2237a..9cebeb3 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_brightness_auto.png and b/res/drawable-mdpi/ic_appwidget_settings_brightness_auto.png differ
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_brightness_mid.png b/res/drawable-mdpi/ic_appwidget_settings_brightness_mid.png
+index 5ffef7a..fe043f5 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_brightness_mid.png and b/res/drawable-mdpi/ic_appwidget_settings_brightness_mid.png differ
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_brightness_off.png b/res/drawable-mdpi/ic_appwidget_settings_brightness_off.png
+index 6e3ee2e..c073ebe 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_brightness_off.png and b/res/drawable-mdpi/ic_appwidget_settings_brightness_off.png differ
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_gps_off.png b/res/drawable-mdpi/ic_appwidget_settings_gps_off.png
+index 80f217e..6442720 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_gps_off.png and b/res/drawable-mdpi/ic_appwidget_settings_gps_off.png differ
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_gps_on.png b/res/drawable-mdpi/ic_appwidget_settings_gps_on.png
+index df2e535..9e98ad9 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_gps_on.png and b/res/drawable-mdpi/ic_appwidget_settings_gps_on.png differ
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_sync_off.png b/res/drawable-mdpi/ic_appwidget_settings_sync_off.png
+index 2417dc8..ddef24c 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_sync_off.png and b/res/drawable-mdpi/ic_appwidget_settings_sync_off.png differ
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_sync_on.png b/res/drawable-mdpi/ic_appwidget_settings_sync_on.png
+index dd6c766..f7ba24a 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_sync_on.png and b/res/drawable-mdpi/ic_appwidget_settings_sync_on.png differ
+diff --git a/res/drawable-mdpi/ic_appwidget_settings_wifi_off.png b/res/drawable-mdpi/ic_appwidget_settings_wifi_off.png
+index 1ba2cbf..6edec54 100644
+Binary files a/res/drawable-mdpi/ic_appwidget_settings_wifi_off.png and b/res/drawable-mdpi/ic_appwidget_settings_wifi_off.png differ
+diff --git a/res/drawable-mdpi/ic_bt_cellphone.png b/res/drawable-mdpi/ic_bt_cellphone.png
+index 4bf7ba5..bd84c48 100755
+Binary files a/res/drawable-mdpi/ic_bt_cellphone.png and b/res/drawable-mdpi/ic_bt_cellphone.png differ
+diff --git a/res/drawable-mdpi/ic_bt_headphones_a2dp.png b/res/drawable-mdpi/ic_bt_headphones_a2dp.png
+index b9bfec6..84ac3d6 100755
+Binary files a/res/drawable-mdpi/ic_bt_headphones_a2dp.png and b/res/drawable-mdpi/ic_bt_headphones_a2dp.png differ
+diff --git a/res/drawable-mdpi/ic_bt_headset_hfp.png b/res/drawable-mdpi/ic_bt_headset_hfp.png
+index cd91841..9b53439 100644
+Binary files a/res/drawable-mdpi/ic_bt_headset_hfp.png and b/res/drawable-mdpi/ic_bt_headset_hfp.png differ
+diff --git a/res/drawable-mdpi/ic_bt_hidp.png b/res/drawable-mdpi/ic_bt_hidp.png
+index 733606e..1594b2c 100644
+Binary files a/res/drawable-mdpi/ic_bt_hidp.png and b/res/drawable-mdpi/ic_bt_hidp.png differ
+diff --git a/res/drawable-mdpi/ic_bt_laptop.png b/res/drawable-mdpi/ic_bt_laptop.png
+index 49a71c9..4b9ad6b 100755
+Binary files a/res/drawable-mdpi/ic_bt_laptop.png and b/res/drawable-mdpi/ic_bt_laptop.png differ
+diff --git a/res/drawable-mdpi/ic_launcher_settings.png b/res/drawable-mdpi/ic_launcher_settings.png
+index a8cddf3..05cdd9a 100644
+Binary files a/res/drawable-mdpi/ic_launcher_settings.png and b/res/drawable-mdpi/ic_launcher_settings.png differ
+diff --git a/res/drawable-mdpi/ic_menu_add.png b/res/drawable-mdpi/ic_menu_add.png
+index 04f01ac..254a572 100644
+Binary files a/res/drawable-mdpi/ic_menu_add.png and b/res/drawable-mdpi/ic_menu_add.png differ
+diff --git a/res/drawable-mdpi/ic_menu_scan_network.png b/res/drawable-mdpi/ic_menu_scan_network.png
+index 3fa3f45..fed235e 100644
+Binary files a/res/drawable-mdpi/ic_menu_scan_network.png and b/res/drawable-mdpi/ic_menu_scan_network.png differ
+diff --git a/res/drawable-mdpi/ic_network_signal_0.png b/res/drawable-mdpi/ic_network_signal_0.png
+index 150e345..a1b8431 100755
+Binary files a/res/drawable-mdpi/ic_network_signal_0.png and b/res/drawable-mdpi/ic_network_signal_0.png differ
+diff --git a/res/drawable-mdpi/ic_network_signal_1.png b/res/drawable-mdpi/ic_network_signal_1.png
+index bc99c0f..cc6179d 100755
+Binary files a/res/drawable-mdpi/ic_network_signal_1.png and b/res/drawable-mdpi/ic_network_signal_1.png differ
+diff --git a/res/drawable-mdpi/ic_network_signal_2.png b/res/drawable-mdpi/ic_network_signal_2.png
+index 9d5d611..1373fb6 100755
+Binary files a/res/drawable-mdpi/ic_network_signal_2.png and b/res/drawable-mdpi/ic_network_signal_2.png differ
+diff --git a/res/drawable-mdpi/ic_network_signal_3.png b/res/drawable-mdpi/ic_network_signal_3.png
+index 259ba2d..14468eb 100755
+Binary files a/res/drawable-mdpi/ic_network_signal_3.png and b/res/drawable-mdpi/ic_network_signal_3.png differ
+diff --git a/res/drawable-mdpi/ic_network_signal_4.png b/res/drawable-mdpi/ic_network_signal_4.png
+index 605b144..a7d0d8b 100755
+Binary files a/res/drawable-mdpi/ic_network_signal_4.png and b/res/drawable-mdpi/ic_network_signal_4.png differ
+diff --git a/res/drawable-mdpi/ic_settings_about.png b/res/drawable-mdpi/ic_settings_about.png
+index b84d944..b3b61fb 100755
+Binary files a/res/drawable-mdpi/ic_settings_about.png and b/res/drawable-mdpi/ic_settings_about.png differ
+diff --git a/res/drawable-mdpi/ic_settings_accessibility.png b/res/drawable-mdpi/ic_settings_accessibility.png
+index 71663ee..ba86d3d 100755
+Binary files a/res/drawable-mdpi/ic_settings_accessibility.png and b/res/drawable-mdpi/ic_settings_accessibility.png differ
+diff --git a/res/drawable-mdpi/ic_settings_applications.png b/res/drawable-mdpi/ic_settings_applications.png
+index 745ff2a..33e23b3 100755
+Binary files a/res/drawable-mdpi/ic_settings_applications.png and b/res/drawable-mdpi/ic_settings_applications.png differ
+diff --git a/res/drawable-mdpi/ic_settings_date_time.png b/res/drawable-mdpi/ic_settings_date_time.png
+index cc8d774..f4fc73c 100755
+Binary files a/res/drawable-mdpi/ic_settings_date_time.png and b/res/drawable-mdpi/ic_settings_date_time.png differ
+diff --git a/res/drawable-mdpi/ic_settings_display.png b/res/drawable-mdpi/ic_settings_display.png
+index 85af393..9366298 100644
+Binary files a/res/drawable-mdpi/ic_settings_display.png and b/res/drawable-mdpi/ic_settings_display.png differ
+diff --git a/res/drawable-mdpi/ic_settings_dock.png b/res/drawable-mdpi/ic_settings_dock.png
+index fb5d576..01ebe91 100644
+Binary files a/res/drawable-mdpi/ic_settings_dock.png and b/res/drawable-mdpi/ic_settings_dock.png differ
+diff --git a/res/drawable-mdpi/ic_settings_language.png b/res/drawable-mdpi/ic_settings_language.png
+index df271d6..f8aca67 100755
+Binary files a/res/drawable-mdpi/ic_settings_language.png and b/res/drawable-mdpi/ic_settings_language.png differ
+diff --git a/res/drawable-mdpi/ic_settings_launcher.png b/res/drawable-mdpi/ic_settings_launcher.png
+deleted file mode 100644
+index 1f151d3..0000000
+Binary files a/res/drawable-mdpi/ic_settings_launcher.png and /dev/null differ
+diff --git a/res/drawable-mdpi/ic_settings_profile.png b/res/drawable-mdpi/ic_settings_profile.png
+index 8b8d747..22e670e 100644
+Binary files a/res/drawable-mdpi/ic_settings_profile.png and b/res/drawable-mdpi/ic_settings_profile.png differ
+diff --git a/res/drawable-mdpi/ic_settings_security.png b/res/drawable-mdpi/ic_settings_security.png
+index 7e4868c..3eb4421 100755
+Binary files a/res/drawable-mdpi/ic_settings_security.png and b/res/drawable-mdpi/ic_settings_security.png differ
+diff --git a/res/drawable-mdpi/ic_settings_sound.png b/res/drawable-mdpi/ic_settings_sound.png
+index 73c93bd..f647fea 100755
+Binary files a/res/drawable-mdpi/ic_settings_sound.png and b/res/drawable-mdpi/ic_settings_sound.png differ
+diff --git a/res/drawable-mdpi/ic_settings_storage.png b/res/drawable-mdpi/ic_settings_storage.png
+index a209f6f..d44f91a 100755
+Binary files a/res/drawable-mdpi/ic_settings_storage.png and b/res/drawable-mdpi/ic_settings_storage.png differ
+diff --git a/res/drawable-mdpi/ic_settings_sync.png b/res/drawable-mdpi/ic_settings_sync.png
+index dd6c766..4130f31 100755
+Binary files a/res/drawable-mdpi/ic_settings_sync.png and b/res/drawable-mdpi/ic_settings_sync.png differ
+diff --git a/res/drawable-mdpi/ic_tab_selected_all.png b/res/drawable-mdpi/ic_tab_selected_all.png
+index bdcfc16..3cc0dde 100644
+Binary files a/res/drawable-mdpi/ic_tab_selected_all.png and b/res/drawable-mdpi/ic_tab_selected_all.png differ
+diff --git a/res/drawable-mdpi/ic_tab_selected_download.png b/res/drawable-mdpi/ic_tab_selected_download.png
+index e9d02c8..6d9faf1 100644
+Binary files a/res/drawable-mdpi/ic_tab_selected_download.png and b/res/drawable-mdpi/ic_tab_selected_download.png differ
+diff --git a/res/drawable-mdpi/ic_tab_selected_running.png b/res/drawable-mdpi/ic_tab_selected_running.png
+index 5f07d4b..b76a1d3 100644
+Binary files a/res/drawable-mdpi/ic_tab_selected_running.png and b/res/drawable-mdpi/ic_tab_selected_running.png differ
+diff --git a/res/drawable-mdpi/ic_tab_selected_sdcard.png b/res/drawable-mdpi/ic_tab_selected_sdcard.png
+index f90c7ea..731aad5 100644
+Binary files a/res/drawable-mdpi/ic_tab_selected_sdcard.png and b/res/drawable-mdpi/ic_tab_selected_sdcard.png differ
+diff --git a/res/drawable-mdpi/ic_tab_unselected_all.png b/res/drawable-mdpi/ic_tab_unselected_all.png
+index dfd81cc..3cc0dde 100644
+Binary files a/res/drawable-mdpi/ic_tab_unselected_all.png and b/res/drawable-mdpi/ic_tab_unselected_all.png differ
+diff --git a/res/drawable-mdpi/ic_tab_unselected_download.png b/res/drawable-mdpi/ic_tab_unselected_download.png
+index b7e56d4..6d9faf1 100644
+Binary files a/res/drawable-mdpi/ic_tab_unselected_download.png and b/res/drawable-mdpi/ic_tab_unselected_download.png differ
+diff --git a/res/drawable-mdpi/ic_tab_unselected_running.png b/res/drawable-mdpi/ic_tab_unselected_running.png
+index 6a72513..b76a1d3 100644
+Binary files a/res/drawable-mdpi/ic_tab_unselected_running.png and b/res/drawable-mdpi/ic_tab_unselected_running.png differ
+diff --git a/res/drawable-mdpi/ic_tab_unselected_sdcard.png b/res/drawable-mdpi/ic_tab_unselected_sdcard.png
+index 59af3a2..731aad5 100644
+Binary files a/res/drawable-mdpi/ic_tab_unselected_sdcard.png and b/res/drawable-mdpi/ic_tab_unselected_sdcard.png differ
+diff --git a/res/drawable-mdpi/ic_wifi_lock_signal_1.png b/res/drawable-mdpi/ic_wifi_lock_signal_1.png
+index af78e05..e8ac823 100755
+Binary files a/res/drawable-mdpi/ic_wifi_lock_signal_1.png and b/res/drawable-mdpi/ic_wifi_lock_signal_1.png differ
+diff --git a/res/drawable-mdpi/ic_wifi_lock_signal_2.png b/res/drawable-mdpi/ic_wifi_lock_signal_2.png
+index b5b373e..6034a89 100755
+Binary files a/res/drawable-mdpi/ic_wifi_lock_signal_2.png and b/res/drawable-mdpi/ic_wifi_lock_signal_2.png differ
+diff --git a/res/drawable-mdpi/ic_wifi_lock_signal_3.png b/res/drawable-mdpi/ic_wifi_lock_signal_3.png
+index 49ac417..0089a55 100755
+Binary files a/res/drawable-mdpi/ic_wifi_lock_signal_3.png and b/res/drawable-mdpi/ic_wifi_lock_signal_3.png differ
+diff --git a/res/drawable-mdpi/ic_wifi_lock_signal_4.png b/res/drawable-mdpi/ic_wifi_lock_signal_4.png
+index cd86ca0..ae02f24 100644
+Binary files a/res/drawable-mdpi/ic_wifi_lock_signal_4.png and b/res/drawable-mdpi/ic_wifi_lock_signal_4.png differ
+diff --git a/res/drawable-mdpi/ic_wifi_signal_1.png b/res/drawable-mdpi/ic_wifi_signal_1.png
+index 7a524e3..e99a47d 100755
+Binary files a/res/drawable-mdpi/ic_wifi_signal_1.png and b/res/drawable-mdpi/ic_wifi_signal_1.png differ
+diff --git a/res/drawable-mdpi/ic_wifi_signal_2.png b/res/drawable-mdpi/ic_wifi_signal_2.png
+index efe4b5f..79516ea 100755
+Binary files a/res/drawable-mdpi/ic_wifi_signal_2.png and b/res/drawable-mdpi/ic_wifi_signal_2.png differ
+diff --git a/res/drawable-mdpi/ic_wifi_signal_3.png b/res/drawable-mdpi/ic_wifi_signal_3.png
+index a720bb0..f2af11d 100755
+Binary files a/res/drawable-mdpi/ic_wifi_signal_3.png and b/res/drawable-mdpi/ic_wifi_signal_3.png differ
+diff --git a/res/drawable-mdpi/ic_wifi_signal_4.png b/res/drawable-mdpi/ic_wifi_signal_4.png
+index d45028e..3d4288e 100644
+Binary files a/res/drawable-mdpi/ic_wifi_signal_4.png and b/res/drawable-mdpi/ic_wifi_signal_4.png differ
+diff --git a/res/drawable-mdpi/icon.png b/res/drawable-mdpi/icon.png
+index a8cddf3..05cdd9a 100644
+Binary files a/res/drawable-mdpi/icon.png and b/res/drawable-mdpi/icon.png differ
+diff --git a/res/values/strings.xml b/res/values/strings.xml
+index 055aa1c..ebf39b0 100644
+--- a/res/values/strings.xml
++++ b/res/values/strings.xml
+@@ -3137,4 +3137,22 @@ found in the list of installed applications.</string>
+ 
+     <!-- Unlock finger settings screen, change unlock finger screen countdown hint on bottom of screen when the screen is locked out -->
+     <string name="lockfinger_lockout_countdown_footer">Try again in %d seconds.</string>
++    
++    <!-- icsified settings -->
++    <string name="settings_ics_system">SYSTEM</string>
++    <string name="settings_ics_radio">WIRELESS &amp; NETWORKS</string>
++    <string name="settings_radio_more">More...</string>
++    <string name="settings_ics_device">DEVICE</string>
++    <string name="settings_ics_personal">PERSONAL</string>
++    <string name="settings_ics_system_cap">SYSTEM</string>
++    <string name="power_usage_summary_text">Battery</string>
++	<string name="settings_ics_wifi">Wifi</string>
++	<string name="settings_ics_bluetooth">Bluetooth</string>
++	<string name="settings_zeamlauncher">Zeam Launcher</string>
++	
++	<string name="performance_settings_title_head">Performance</string>
++	<string name="themes_settings">Themes</string>
++	<string name="settings_ics_interface">INTERFACE</string>
++	<string name="settings_ics_cmsystem">System</string>
++	<string name="settings_ics_lockscreen">Lockscreen</string>
+ </resources>
+diff --git a/res/xml/settings.xml b/res/xml/settings.xml
+index fff0d18..4ba962d 100644
+--- a/res/xml/settings.xml
++++ b/res/xml/settings.xml
+@@ -14,22 +14,51 @@
+      limitations under the License.
+ -->
+ 
+-<PreferenceScreen
++<PreferenceScreen 
++	android:title="@string/settings_label"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+-    android:title="@string/settings_label"
+     android:key="parent">
+ 
++	<PreferenceCategory android:title="@string/settings_ics_radio" />
++	
++		<CheckBoxPreference
++        android:key="toggle_wifi"
++        android:title="@string/wifi_quick_toggle_title"
++        android:summary="@string/wifi_quick_toggle_summary"
++        android:persistent="false" 
++        settings:icon="@drawable/ic_settings_wireless"/>
++        
++        <!-- Wifi
+         <com.android.settings.IconPreferenceScreen
+-            android:title="@string/radio_controls_title"
++            android:title="@string/settings_ics_wifi"
+             settings:icon="@drawable/ic_settings_wireless">
+             <intent
+                 android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.settings"
+-                android:targetClass="com.android.settings.WirelessSettings" />
++                android:targetClass="com.android.settings.wifi.WifiSettings"/>
+         </com.android.settings.IconPreferenceScreen>
+-
++        -->
++        
++        <CheckBoxPreference
++        android:key="toggle_bluetooth"
++        android:title="@string/bluetooth_quick_toggle_title"
++        android:summary="@string/bluetooth_quick_toggle_summary"
++        android:persistent="false" />
++        
++		<!-- Bluetooth
+         <com.android.settings.IconPreferenceScreen
++        android:title="@string/settings_ics_bluetooth"
++		settings:icon="@drawable/ic_settings_bluetooth2">
++        <intent
++            android:action="android.intent.action.MAIN"
++            android:targetPackage="com.android.settings"
++            android:targetClass="com.android.settings.bluetooth.BluetoothSettings" />
++		</com.android.settings.IconPreferenceScreen>
++		-->
++		
++		<!-- Call Settings -->
++		<com.android.settings.IconPreferenceScreen
+             android:key="call_settings"
+             settings:icon="@drawable/ic_settings_call"
+             android:title="@string/call_settings_title">
+@@ -38,17 +67,17 @@
+                 android:targetPackage="com.android.phone"
+                 android:targetClass="com.android.phone.CallFeaturesSetting" />
+         </com.android.settings.IconPreferenceScreen>
+-
+-	<!-- CM Settings -->
+-        <com.android.settings.IconPreferenceScreen
+-            settings:icon="@drawable/ic_cyanogenmod"
+-            android:title="@string/cm_settings_title">
+-            <intent
+-                android:action="android.intent.action.MAIN"
+-                android:targetPackage="com.cyanogenmod.cmparts"
+-                android:targetClass="com.cyanogenmod.cmparts.activities.MainActivity" />
+-        </com.android.settings.IconPreferenceScreen>
+-
++		
++		<com.android.settings.IconPreferenceScreen
++        android:title="@string/settings_radio_more">
++        <intent
++            android:action="android.intent.action.MAIN"
++            android:targetPackage="com.android.settings"
++            android:targetClass="com.android.settings.WirelessSettings" />
++		</com.android.settings.IconPreferenceScreen>
++
++<PreferenceCategory android:title="@string/settings_ics_device" />
++		
+        <!-- Device Settings -->
+        <com.android.settings.IconPreferenceScreen
+            android:key="device_settings"
+@@ -57,79 +86,131 @@
+            <intent
+                android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"/>
+        </com.android.settings.IconPreferenceScreen>
+-
+-        <!-- Launcher -->
++       
++       <!-- Sound -->
+ 
+         <com.android.settings.IconPreferenceScreen
+-            settings:icon="@drawable/ic_settings_launcher"
+-            android:title="@string/launcher_settings_title"
+-            android:key="launcher_settings">
++            settings:icon="@drawable/ic_settings_sound"
++            android:title="@string/sound_settings_title">
+             <intent
+                 android:action="android.intent.action.MAIN"
+-                android:targetPackage="com.android.launcher"
+-                android:targetClass="com.android.launcher.MyLauncherSettings" />
++                android:targetPackage="com.android.settings"
++                android:targetClass="com.android.settings.SoundSettings" />
+         </com.android.settings.IconPreferenceScreen>
+ 
+-        <!-- Sound -->
++		<!-- Display -->
+ 
+         <com.android.settings.IconPreferenceScreen
+-            settings:icon="@drawable/ic_settings_sound"
+-            android:title="@string/sound_settings_title">
++            settings:icon="@drawable/ic_settings_display"
++            android:title="@string/display_settings_title">
+             <intent
+                 android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.settings"
+-                android:targetClass="com.android.settings.SoundSettings" />
++                android:targetClass="com.android.settings.DisplaySettings" />
++        </com.android.settings.IconPreferenceScreen>
++		
++		<!-- Storage -->
++
++        <com.android.settings.IconPreferenceScreen
++            settings:icon="@drawable/ic_settings_storage"
++            android:title="@string/storage_settings">
++            <intent android:action="android.intent.action.MAIN"
++                android:targetPackage="com.android.settings"
++                android:targetClass="com.android.settings.deviceinfo.Memory" />
+         </com.android.settings.IconPreferenceScreen>
++		
++		<!-- Battery -->
++		<com.android.settings.IconPreferenceScreen
++			android:title="@string/power_usage_summary_text" 
++			android:key="power_usage"
++			settings:icon="@drawable/ic_settings_battery">
++			<intent android:targetPackage="com.android.settings" 
++			android:action="android.intent.action.MAIN" 
++			android:targetClass="com.android.settings.fuelgauge.PowerUsageSummary" />
++		</com.android.settings.IconPreferenceScreen>
+ 
+-        <!-- Profiles -->
++        <!-- Application Settings -->
+ 
+         <com.android.settings.IconPreferenceScreen
+-            settings:icon="@drawable/ic_settings_profile"
+-            android:title="@string/profile_settings_title">
++            settings:icon="@drawable/ic_settings_applications"
++            android:title="@string/applications_settings"
++            android:key="applications_settings">
+             <intent
+                 android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.settings"
+-                android:targetClass="com.android.settings.ProfileList" />
++                android:targetClass="com.android.settings.ApplicationSettings" />
+         </com.android.settings.IconPreferenceScreen>
++        
++        
++<PreferenceCategory android:title="@string/settings_ics_interface" /> 
++       
++        <!-- Launcher -->
+ 
+-        <!-- Display -->
++        <com.android.settings.IconPreferenceScreen
++            settings:icon="@drawable/ic_settings_cmlauncher"
++            android:title="@string/launcher_settings_title"
++            android:key="launcher_settings">
++            <intent
++                android:action="android.intent.action.MAIN"
++                android:targetPackage="com.android.launcher"
++                android:targetClass="com.android.launcher.MyLauncherSettings" />
++        </com.android.settings.IconPreferenceScreen>
+ 
++        
++        <!-- Zeam Launcher -->
++        
+         <com.android.settings.IconPreferenceScreen
+-            settings:icon="@drawable/ic_settings_display"
+-            android:title="@string/display_settings_title">
++            settings:icon="@drawable/ic_settings_cmlauncher"
++            android:title="@string/settings_zeamlauncher"
++            android:key="zeamlauncher_settings">
+             <intent
+                 android:action="android.intent.action.MAIN"
+-                android:targetPackage="com.android.settings"
+-                android:targetClass="com.android.settings.DisplaySettings" />
++                android:targetPackage="org.zeam"
++                android:targetClass="org.zeam.Preferences"/>
+         </com.android.settings.IconPreferenceScreen>
++        
++        
++		<!-- Theme Chooser -->
+ 
+-        <!-- Security & Location -->
++        <com.android.settings.IconPreferenceScreen
++            settings:icon="@drawable/ic_settings_themes"
++            android:title="@string/themes_settings"
++            android:key="theme_settings">
++            <intent
++                android:action="android.intent.action.MAIN"
++                android:targetPackage="com.tmobile.themechooser"
++                android:targetClass="com.tmobile.themechooser.ThemeChooser" />
++        </com.android.settings.IconPreferenceScreen>
++        
++        
++		<!-- CM-System -->
+ 
+         <com.android.settings.IconPreferenceScreen
+-            settings:icon="@drawable/ic_settings_security"
+-            android:title="@string/security_settings_title"
+-            android:key="security_settings">
++            settings:icon="@drawable/ic_settings_system"
++            android:title="@string/settings_ics_cmsystem"
++            android:key="cmsystem_settings">
+             <intent
+                 android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.settings"
+-                android:targetClass="com.android.settings.SecuritySettings" />
++                android:targetClass="com.android.settings.CMSystem" />
+         </com.android.settings.IconPreferenceScreen>
+-
+-        <!-- Application Settings -->
++		
++<PreferenceCategory android:title="@string/settings_ics_personal" />
++		
++		<!-- Profiles -->
+ 
+         <com.android.settings.IconPreferenceScreen
+-            settings:icon="@drawable/ic_settings_applications"
+-            android:title="@string/applications_settings"
+-            android:key="applications_settings">
++            settings:icon="@drawable/ic_settings_profile"
++            android:title="@string/profile_settings_title">
+             <intent
+                 android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.settings"
+-                android:targetClass="com.android.settings.ApplicationSettings" />
++                android:targetClass="com.android.settings.ProfileList" />
+         </com.android.settings.IconPreferenceScreen>
+-
+-        <!-- Data Sync. The settings activity will ensure this is resolved to an
+-             activity on the system image, otherwise it will remove this
+-             preference. -->
++		
++		<!-- Data Sync. The settings activity will ensure this is resolved to an
++        activity on the system image, otherwise it will remove this
++        preference. -->
+ 
+         <com.android.settings.IconPreferenceScreen
+             settings:icon="@drawable/ic_settings_sync"
+@@ -137,6 +218,18 @@
+             android:key="sync_settings">
+             <intent android:action="android.settings.SYNC_SETTINGS" />
+         </com.android.settings.IconPreferenceScreen>
++		
++		<!-- Security & Location -->
++
++        <com.android.settings.IconPreferenceScreen
++            settings:icon="@drawable/ic_settings_security"
++            android:title="@string/security_settings_title"
++            android:key="security_settings">
++            <intent
++                android:action="android.intent.action.MAIN"
++                android:targetPackage="com.android.settings"
++                android:targetClass="com.android.settings.SecuritySettings" />
++        </com.android.settings.IconPreferenceScreen>
+ 
+         <!-- Privacy -->
+ 
+@@ -150,16 +243,6 @@
+                 android:targetClass="com.android.settings.PrivacySettings" />
+         </com.android.settings.IconPreferenceScreen>
+ 
+-        <!-- Storage -->
+-
+-        <com.android.settings.IconPreferenceScreen
+-            settings:icon="@drawable/ic_settings_storage"
+-            android:title="@string/storage_settings">
+-            <intent android:action="android.intent.action.MAIN"
+-                android:targetPackage="com.android.settings"
+-                android:targetClass="com.android.settings.deviceinfo.Memory" />
+-        </com.android.settings.IconPreferenceScreen>
+-
+         <!-- Language -->
+ 
+         <com.android.settings.IconPreferenceScreen
+@@ -182,17 +265,7 @@
+                 android:targetClass="com.android.settings.VoiceInputOutputSettings" />
+         </com.android.settings.IconPreferenceScreen>
+ 
+-        <!-- Accessibility feedback -->
+-
+-        <com.android.settings.IconPreferenceScreen
+-            settings:icon="@drawable/ic_settings_accessibility"
+-            android:title="@string/accessibility_settings">
+-            <intent
+-                android:action="android.intent.action.MAIN"
+-                android:targetPackage="com.android.settings"
+-                android:targetClass="com.android.settings.AccessibilitySettings" />
+-        </com.android.settings.IconPreferenceScreen>
+-
++<PreferenceCategory android:title="@string/settings_ics_system" />
+         <!-- Dock -->
+ 
+         <com.android.settings.IconPreferenceScreen
+@@ -204,8 +277,8 @@
+                 android:targetPackage="com.android.settings"
+                 android:targetClass="com.android.settings.DockSettings" />
+         </com.android.settings.IconPreferenceScreen>
+-
+-        <!-- Date & Time -->
++			
++	    <!-- Date & Time -->
+ 
+         <com.android.settings.IconPreferenceScreen
+             settings:icon="@drawable/ic_settings_date_time"
+@@ -215,6 +288,47 @@
+                 android:targetPackage="com.android.settings"
+                 android:targetClass="com.android.settings.DateTimeSettings" />
+         </com.android.settings.IconPreferenceScreen>
++		
++        <!-- Accessibility feedback -->
++
++        <com.android.settings.IconPreferenceScreen
++            settings:icon="@drawable/ic_settings_accessibility"
++            android:title="@string/accessibility_settings">
++            <intent
++                android:action="android.intent.action.MAIN"
++                android:targetPackage="com.android.settings"
++                android:targetClass="com.android.settings.AccessibilitySettings" />
++        </com.android.settings.IconPreferenceScreen>
++        
++		<!-- Development -->
++		<com.android.settings.IconPreferenceScreen
++			android:title="@string/development_settings_title"
++			settings:icon="@drawable/ic_settings_development">
++			<intent
++				android:action="android.intent.action.MAIN"
++				android:targetPackage="com.android.settings" 
++				android:targetClass="com.android.settings.DevelopmentSettings" />
++		</com.android.settings.IconPreferenceScreen>
++
++		<!-- CM Settings -->
++        <com.android.settings.IconPreferenceScreen
++            settings:icon="@drawable/ic_cyanogenmod"
++            android:title="@string/cm_settings_title">
++            <intent
++                android:action="android.intent.action.MAIN"
++                android:targetPackage="com.cyanogenmod.cmparts"
++                android:targetClass="com.cyanogenmod.cmparts.activities.MainActivity" />
++        </com.android.settings.IconPreferenceScreen>
++        
++        <!-- Performance settings -->
++		<com.android.settings.IconPreferenceScreen
++		android:key="performance_settings"
++        android:title="@string/performance_settings_title_head"
++        settings:icon="@drawable/ic_settings_performance">
++        <intent android:action="android.intent.action.MAIN"
++            android:targetPackage="com.cyanogenmod.cmparts"
++            android:targetClass="com.cyanogenmod.cmparts.activities.PerformanceSettingsActivity" />
++		</com.android.settings.IconPreferenceScreen>
+ 
+         <!-- About Device -->
+ 
+diff --git a/res/xml/wireless_settings.xml b/res/xml/wireless_settings.xml
+index 2947447..86ca9ef 100644
+--- a/res/xml/wireless_settings.xml
++++ b/res/xml/wireless_settings.xml
+@@ -16,20 +16,23 @@
+ 
+ <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ 
++
+     <CheckBoxPreference
+         android:key="toggle_airplane"
+         android:title="@string/airplane_mode"
+         android:summary="@string/airplane_mode_summary"
+         android:persistent="false"
+         android:disableDependentsState="true" />
+-
++	
+     <!-- Programmatically will have dynamic summary, but we provide the fallback summary. -->
++    	<!--
+     <CheckBoxPreference
+         android:key="toggle_wifi"
+         android:title="@string/wifi_quick_toggle_title"
+         android:summary="@string/wifi_quick_toggle_summary"
+         android:persistent="false" />
+-
++	-->
++	
+     <PreferenceScreen
+         android:key="wifi_settings"
+         android:title="@string/wifi_settings"
+@@ -50,12 +53,14 @@
+             android:targetClass="com.android.settings.wimax.WimaxSettings" />
+     </PreferenceScreen>
+ 
++	<!--
+     <CheckBoxPreference
+         android:key="toggle_bluetooth"
+         android:title="@string/bluetooth_quick_toggle_title"
+         android:summary="@string/bluetooth_quick_toggle_summary"
+         android:persistent="false" />
+-
++	-->
++	
+     <PreferenceScreen
+         android:key="bt_settings"
+         android:title="@string/bluetooth_settings_title"
+diff --git a/src/com/android/settings/Settings.java b/src/com/android/settings/Settings.java
+index c094cb0..54c7377 100644
+--- a/src/com/android/settings/Settings.java
++++ b/src/com/android/settings/Settings.java
+@@ -16,11 +16,15 @@
+ 
+ package com.android.settings;
+ 
++import com.android.settings.wifi.WifiEnabler;
++import com.android.settings.bluetooth.BluetoothEnabler;
++
+ import android.net.sip.SipManager;
+ import android.os.Bundle;
+ import android.content.Intent;
+ import android.content.pm.ApplicationInfo;
+ import android.content.pm.ActivityInfo;
++import android.preference.CheckBoxPreference;
+ import android.preference.Preference;
+ import android.preference.PreferenceActivity;
+ import android.preference.PreferenceGroup;
+@@ -38,13 +42,27 @@ public class Settings extends PreferenceActivity {
+     private static final String KEY_LAUNCHER = "launcher_settings";
+ 
+     private Preference mLauncherSettings;
++    
++    private WifiEnabler mWifiEnabler;
++    private BluetoothEnabler mBtEnabler;
++    
++    private static final String KEY_TOGGLE_WIFI = "toggle_wifi";
++    private static final String KEY_TOGGLE_BLUETOOTH = "toggle_bluetooth";
+ 
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+-
++		
+         addPreferencesFromResource(R.xml.settings);
+-
++        
++        //for Wifi Checkbox
++        CheckBoxPreference wifi = (CheckBoxPreference) findPreference(KEY_TOGGLE_WIFI);
++		mWifiEnabler = new WifiEnabler(this, wifi);
++		
++		//for Bluetooth Checkbox
++		CheckBoxPreference bt = (CheckBoxPreference) findPreference(KEY_TOGGLE_BLUETOOTH);
++		mBtEnabler = new BluetoothEnabler(this, bt);
++		
+         int activePhoneType = TelephonyManager.getDefault().getPhoneType();
+ 
+         PreferenceGroup parent = (PreferenceGroup) findPreference(KEY_PARENT);
+@@ -52,7 +70,7 @@ public class Settings extends PreferenceActivity {
+         Utils.updatePreferenceToSpecificActivityOrRemove(this, parent, KEY_LAUNCHER, 0);
+         Utils.updatePreferenceToSpecificActivityOrRemove(this, parent, KEY_DEVICE_SETTINGS, 0);
+         mLauncherSettings = parent.findPreference(KEY_LAUNCHER);
+-
++		
+         Preference dockSettings = parent.findPreference(KEY_DOCK_SETTINGS);
+         if (getResources().getBoolean(R.bool.has_dock_settings) == false && dockSettings != null) {
+             parent.removePreference(dockSettings);
+@@ -65,7 +83,10 @@ public class Settings extends PreferenceActivity {
+         findPreference(KEY_CALL_SETTINGS).setEnabled(
+                 !AirplaneModeEnabler.isAirplaneModeOn(this)
+                 || SipManager.isVoipSupported(this));
+-
++		
++		mWifiEnabler.resume();
++        mBtEnabler.resume();
++		
+         Intent intent = new Intent();
+         intent.setAction("android.intent.action.MAIN");
+         intent.addCategory("android.intent.category.HOME");
+@@ -83,5 +104,14 @@ public class Settings extends PreferenceActivity {
+             }
+         }
+     }
++    
++    @Override
++    protected void onPause() {
++		super.onPause();
++		mWifiEnabler.pause();
++		mBtEnabler.pause();
++	}
+ 
+ }
++
++
+diff --git a/src/com/android/settings/WirelessSettings.java b/src/com/android/settings/WirelessSettings.java
+index a48b587..fc9e633 100644
+--- a/src/com/android/settings/WirelessSettings.java
++++ b/src/com/android/settings/WirelessSettings.java
+@@ -52,9 +52,9 @@ public class WirelessSettings extends PreferenceActivity {
+ 
+     private AirplaneModeEnabler mAirplaneModeEnabler;
+     private CheckBoxPreference mAirplaneModePreference;
+-    private WifiEnabler mWifiEnabler;
++    //private WifiEnabler mWifiEnabler;
+     private NfcEnabler mNfcEnabler;
+-    private BluetoothEnabler mBtEnabler;
++    //private BluetoothEnabler mBtEnabler;
+ 
+     /**
+      * Invoked on each preference click in this hierarchy, overrides
+@@ -92,14 +92,14 @@ public class WirelessSettings extends PreferenceActivity {
+         addPreferencesFromResource(R.xml.wireless_settings);
+ 
+         CheckBoxPreference airplane = (CheckBoxPreference) findPreference(KEY_TOGGLE_AIRPLANE);
+-        CheckBoxPreference wifi = (CheckBoxPreference) findPreference(KEY_TOGGLE_WIFI);
+-        CheckBoxPreference bt = (CheckBoxPreference) findPreference(KEY_TOGGLE_BLUETOOTH);
++        //CheckBoxPreference wifi = (CheckBoxPreference) findPreference(KEY_TOGGLE_WIFI);
++        //CheckBoxPreference bt = (CheckBoxPreference) findPreference(KEY_TOGGLE_BLUETOOTH);
+         CheckBoxPreference nfc = (CheckBoxPreference) findPreference(KEY_TOGGLE_NFC);
+ 
+         mAirplaneModeEnabler = new AirplaneModeEnabler(this, airplane);
+         mAirplaneModePreference = (CheckBoxPreference) findPreference(KEY_TOGGLE_AIRPLANE);
+-        mWifiEnabler = new WifiEnabler(this, wifi);
+-        mBtEnabler = new BluetoothEnabler(this, bt);
++        //mWifiEnabler = new WifiEnabler(this, wifi);
++        //mBtEnabler = new BluetoothEnabler(this, bt);
+         mNfcEnabler = new NfcEnabler(this, nfc);
+ 
+         String toggleable = Settings.System.getString(getContentResolver(),
+@@ -120,25 +120,25 @@ public class WirelessSettings extends PreferenceActivity {
+                 ps.setDependency(KEY_TOGGLE_AIRPLANE);
+             }
+         }
+-
++		/*
+         // Manually set dependencies for Wifi when not toggleable.
+         if (toggleable == null || !toggleable.contains(Settings.System.RADIO_WIFI)) {
+             wifi.setDependency(KEY_TOGGLE_AIRPLANE);
+             findPreference(KEY_WIFI_SETTINGS).setDependency(KEY_TOGGLE_AIRPLANE);
+             findPreference(KEY_VPN_SETTINGS).setDependency(KEY_TOGGLE_AIRPLANE);
+         }
+-
++		
+         // Manually set dependencies for Bluetooth when not toggleable.
+         if (toggleable == null || !toggleable.contains(Settings.System.RADIO_BLUETOOTH)) {
+             bt.setDependency(KEY_TOGGLE_AIRPLANE);
+             findPreference(KEY_BT_SETTINGS).setDependency(KEY_TOGGLE_AIRPLANE);
+         }
+-
++		
+         // Remove Bluetooth Settings if Bluetooth service is not available.
+         if (ServiceManager.getService(BluetoothAdapter.BLUETOOTH_SERVICE) == null) {
+             getPreferenceScreen().removePreference(bt);
+         }
+-
++        */
+         // Remove NFC if its not available
+         if (NfcAdapter.getDefaultAdapter(this) == null) {
+             getPreferenceScreen().removePreference(nfc);
+@@ -173,8 +173,8 @@ public class WirelessSettings extends PreferenceActivity {
+         super.onResume();
+ 
+         mAirplaneModeEnabler.resume();
+-        mWifiEnabler.resume();
+-        mBtEnabler.resume();
++        //mWifiEnabler.resume();
++        //mBtEnabler.resume();
+         mNfcEnabler.resume();
+     }
+ 
+@@ -183,8 +183,8 @@ public class WirelessSettings extends PreferenceActivity {
+         super.onPause();
+ 
+         mAirplaneModeEnabler.pause();
+-        mWifiEnabler.pause();
+-        mBtEnabler.pause();
++        //mWifiEnabler.pause();
++        //mBtEnabler.pause();
+         mNfcEnabler.pause();
+     }
+ 
