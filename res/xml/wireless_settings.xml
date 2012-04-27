@@ -16,20 +16,23 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <CheckBoxPreference
         android:key="toggle_airplane"
         android:title="@string/airplane_mode"
         android:summary="@string/airplane_mode_summary"
         android:persistent="false"
         android:disableDependentsState="true" />
-
+	
     <!-- Programmatically will have dynamic summary, but we provide the fallback summary. -->
+    	<!--
     <CheckBoxPreference
         android:key="toggle_wifi"
         android:title="@string/wifi_quick_toggle_title"
         android:summary="@string/wifi_quick_toggle_summary"
         android:persistent="false" />
-
+	-->
+	
     <PreferenceScreen
         android:key="wifi_settings"
         android:title="@string/wifi_settings"
@@ -50,12 +53,14 @@
             android:targetClass="com.android.settings.wimax.WimaxSettings" />
     </PreferenceScreen>
 
+	<!--
     <CheckBoxPreference
         android:key="toggle_bluetooth"
         android:title="@string/bluetooth_quick_toggle_title"
         android:summary="@string/bluetooth_quick_toggle_summary"
         android:persistent="false" />
-
+	-->
+	
     <PreferenceScreen
         android:key="bt_settings"
         android:title="@string/bluetooth_settings_title"
