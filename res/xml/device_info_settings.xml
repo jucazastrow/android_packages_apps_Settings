@@ -21,7 +21,7 @@
         <PreferenceScreen
 				android:key="gingerdx_changelog"
                 android:title="@string/gingerdx_changelog_title"
-                android:summary="Changelog, GingerDX & AlfsAddon Download">
+                android:summary="@string/gingerdx_changelog_summary">
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="de.djnilse.gdxUpdateNotify"
