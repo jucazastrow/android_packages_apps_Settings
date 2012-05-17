@@ -161,12 +161,12 @@
         
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_cmlauncher"
-            android:title="@string/settings_zeamlauncher"
+            android:title="@string/settings_nemuslauncher"
             android:key="zeamlauncher_settings">
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetPackage="org.zeam"
-                android:targetClass="org.zeam.Preferences"/>
+                android:targetPackage="com.nemustech.launcher"
+                android:targetClass="com.nemustech.spareparts.SettingMainActivity"/>
         </com.android.settings.IconPreferenceScreen>
         
         
@@ -184,7 +184,7 @@
         
         
 		<!-- CM-System -->
-
+		<!--
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_system"
             android:title="@string/settings_ics_cmsystem"
@@ -194,6 +194,7 @@
                 android:targetPackage="com.android.settings"
                 android:targetClass="com.android.settings.CMSystem" />
         </com.android.settings.IconPreferenceScreen>
+		-->
 		
 <PreferenceCategory android:title="@string/settings_ics_personal" />
 		

@@ -21,11 +21,12 @@
     android:key="parent">
         
         <PreferenceScreen
-			android:title="@string/settings_ics_lockscreen">
-			<intent
-				android:action="android.intent.action.MAIN"
-				android:targetPackage="com.cyanogenmod.cmparts"
-				android:targetClass="com.cyanogenmod.cmparts.activities.LockscreenActivity" />
-		</PreferenceScreen>
+		android:title="@string/settings_ics_lockscreen">
+		<intent
+			android:action="android.intent.action.MAIN"
+			android:targetPackage="com.cyanogenmod.cmparts"
+			android:targetClass="com.cyanogenmod.cmparts.activities.LockscreenActivity" />
+	</PreferenceScreen>
+
 
 </PreferenceScreen>

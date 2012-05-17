@@ -113,8 +113,8 @@ public class DisplaySettings extends PreferenceActivity implements
         super.onResume();
 
         updateState(true);
-    }
-
+	}
+	
     private void updateState(boolean force) {
         int animations = 0;
         try {
