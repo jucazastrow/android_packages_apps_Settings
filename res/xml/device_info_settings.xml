@@ -16,7 +16,18 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
-
+		
+		 <!-- GingerDX Changelog -->
+        <PreferenceScreen
+				android:key="gingerdx_changelog"
+                android:title="@string/gingerdx_changelog_title"
+                android:summary="Changelog, GingerDX & AlfsAddon Download">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="de.djnilse.gdxUpdateNotify"
+                android:targetClass="de.djnilse.gdxUpdateNotify.Changelog" />
+        </PreferenceScreen>
+		
         <!-- Additional System Update menu -->
         <PreferenceScreen android:key="additional_system_update_settings"
                 android:title="@string/additional_system_update_settings_list_item_title">
