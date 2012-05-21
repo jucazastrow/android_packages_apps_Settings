@@ -3137,4 +3137,26 @@ found in the list of installed applications.</string>
 
     <!-- Unlock finger settings screen, change unlock finger screen countdown hint on bottom of screen when the screen is locked out -->
     <string name="lockfinger_lockout_countdown_footer">Try again in %d seconds.</string>
+    
+    <!-- icsified settings -->
+    <string name="settings_ics_system">SYSTEM</string>
+    <string name="settings_ics_radio">WIRELESS &amp; NETWORKS</string>
+    <string name="settings_radio_more">More...</string>
+    <string name="settings_ics_device">DEVICE</string>
+    <string name="settings_ics_personal">PERSONAL</string>
+    <string name="settings_ics_system_cap">SYSTEM</string>
+    <string name="power_usage_summary_text">Battery</string>
+	<string name="settings_ics_wifi">Wifi</string>
+	<string name="settings_ics_bluetooth">Bluetooth</string>
+	<string name="settings_zeamlauncher">Zeam Launcher</string>
+	<string name="settings_nemuslauncher">Nemus Launcher</string>
+	
+	<string name="performance_settings_title_head">Performance</string>
+	<string name="themes_settings">Themes</string>
+	<string name="settings_ics_interface">INTERFACE</string>
+	<string name="settings_ics_cmsystem">System</string>
+	<string name="settings_ics_lockscreen">Lockscreen</string>
+	<string name="settings_ics_lednotification">LED Notifications</string>
+	<string name="gingerdx_changelog_title">GingerDX Changelog</string>
+	<string name="gingerdx_changelog_summary">Changelog, GingerDX &amp; AlfsAddon Download</string>
 </resources>
