@@ -72,18 +72,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-        <!-- CM System -->
-        <activity android:name="CMSystem"
-                android:label="@string/settings_ics_cmsystem"
-                >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.settings.CM_SYSTEM_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-            </intent-filter>
-        </activity>
 
         <!-- Wireless Controls -->
 
