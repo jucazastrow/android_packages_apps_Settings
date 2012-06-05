@@ -20,7 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="parent">
 
-	<PreferenceCategory android:title="@string/settings_ics_radio" />
+	<PreferenceCategory android:title="@string/settings_ics_radio" >
 	
 		<CheckBoxPreference
         android:key="toggle_wifi"
@@ -75,8 +75,9 @@
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.WirelessSettings" />
 		</com.android.settings.IconPreferenceScreen>
+	</PreferenceCategory>
 
-<PreferenceCategory android:title="@string/settings_ics_device" />
+	<PreferenceCategory android:title="@string/settings_ics_device" >
 		
        <!-- Device Settings -->
        <com.android.settings.IconPreferenceScreen
@@ -140,9 +141,9 @@
                 android:targetPackage="com.android.settings"
                 android:targetClass="com.android.settings.ApplicationSettings" />
         </com.android.settings.IconPreferenceScreen>
+	</PreferenceCategory>
         
-        
-<PreferenceCategory android:title="@string/settings_ics_interface" /> 
+	<PreferenceCategory android:title="@string/settings_ics_interface" > 
        
         <!-- Launcher -->
 
@@ -157,7 +158,7 @@
         </com.android.settings.IconPreferenceScreen>
 
         
-        <!-- Zeam Launcher -->
+        <!-- Nemus Launcher -->
         
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_cmlauncher"
@@ -181,22 +182,9 @@
                 android:targetPackage="com.tmobile.themechooser"
                 android:targetClass="com.tmobile.themechooser.ThemeChooser" />
         </com.android.settings.IconPreferenceScreen>
-        
-        
-		<!-- CM-System -->
-		<!--
-        <com.android.settings.IconPreferenceScreen
-            settings:icon="@drawable/ic_settings_system"
-            android:title="@string/settings_ics_cmsystem"
-            android:key="cmsystem_settings">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.settings"
-                android:targetClass="com.android.settings.CMSystem" />
-        </com.android.settings.IconPreferenceScreen>
-		-->
+	</PreferenceCategory>
 		
-<PreferenceCategory android:title="@string/settings_ics_personal" />
+	<PreferenceCategory android:title="@string/settings_ics_personal">
 		
 		<!-- Profiles -->
 
@@ -265,8 +253,10 @@
                 android:targetPackage="com.android.settings"
                 android:targetClass="com.android.settings.VoiceInputOutputSettings" />
         </com.android.settings.IconPreferenceScreen>
+	</PreferenceCategory>
 
-<PreferenceCategory android:title="@string/settings_ics_system" />
+	<PreferenceCategory android:title="@string/settings_ics_system" >
+		
         <!-- Dock -->
 
         <com.android.settings.IconPreferenceScreen
@@ -313,7 +303,7 @@
 
 		<!-- CM Settings -->
         <com.android.settings.IconPreferenceScreen
-            settings:icon="@drawable/ic_cyanogenmod"
+            settings:icon="@drawable/ic_settings_system"
             android:title="@string/cm_settings_title">
             <intent
                 android:action="android.intent.action.MAIN"
@@ -341,5 +331,5 @@
                 android:targetPackage="com.android.settings"
                 android:targetClass="com.android.settings.DeviceInfoSettings" />
         </com.android.settings.IconPreferenceScreen>
-
+	</PreferenceCategory>
 </PreferenceScreen>
