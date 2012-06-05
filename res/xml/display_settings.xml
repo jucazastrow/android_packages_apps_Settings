@@ -41,4 +41,5 @@
                 android:persistent="false"
                 android:entries="@array/screen_timeout_entries"
                 android:entryValues="@array/screen_timeout_values" />
+      
 </PreferenceScreen>
