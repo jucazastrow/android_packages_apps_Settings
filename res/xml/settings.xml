@@ -146,7 +146,7 @@
 	<PreferenceCategory android:title="@string/settings_ics_interface" > 
        
         <!-- Launcher -->
-
+		<!--
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_cmlauncher"
             android:title="@string/launcher_settings_title"
@@ -156,7 +156,7 @@
                 android:targetPackage="com.android.launcher"
                 android:targetClass="com.android.launcher.MyLauncherSettings" />
         </com.android.settings.IconPreferenceScreen>
-
+		-->
         
         <!-- Nemus Launcher -->
         
@@ -258,7 +258,7 @@
 	<PreferenceCategory android:title="@string/settings_ics_system" >
 		
         <!-- Dock -->
-
+		<!--
         <com.android.settings.IconPreferenceScreen
             android:key="dock_settings"
             settings:icon="@drawable/ic_settings_dock"
@@ -268,6 +268,7 @@
                 android:targetPackage="com.android.settings"
                 android:targetClass="com.android.settings.DockSettings" />
         </com.android.settings.IconPreferenceScreen>
+		-->
 			
 	    <!-- Date & Time -->
 
