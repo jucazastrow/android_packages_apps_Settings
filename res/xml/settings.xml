@@ -79,7 +79,10 @@
 
 	<PreferenceCategory android:title="@string/settings_ics_device" >
 		
+		
        <!-- Device Settings -->
+       
+       <!--
        <com.android.settings.IconPreferenceScreen
            android:key="device_settings"
            settings:icon="@drawable/ic_settings_device"
@@ -87,7 +90,8 @@
            <intent
                android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"/>
        </com.android.settings.IconPreferenceScreen>
-       
+       -->
+        
        <!-- Sound -->
 
         <com.android.settings.IconPreferenceScreen
