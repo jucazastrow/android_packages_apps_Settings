@@ -483,7 +483,7 @@
   <string name="wifi_tether_settings_text" msgid="123573487844470195">"Nastavení přenosného hotspotu WiFi"</string>
   <string name="wifi_tether_settings_subtext" msgid="8064755682383367008">"Nastavení a správa přenosného hotspotu WiFi"</string>
   <string name="wifi_tether_settings_title" msgid="3749063216348284432">"Nastavení přenosného hotspotu WiFi"</string>
-  <string name="wifi_tether_configure_ap_text" msgid="3474995108398156258">"Konfigurace hotspotu WiFi"</string>
+  <string name="wifi_tether_configure_ap_text" msgid="3474995108398156258">"Nastavení hotspotu WiFi"</string>
   <string name="wifi_tether_configure_subtext" msgid="1927454307836232128">"Přenosný hotspot WiFi <xliff:g id="NETWORK_SSID">%1$s</xliff:g> <xliff:g id="NETWORK_SECURITY">%2$s</xliff:g>"</string>
   <string name="wifi_tether_configure_ssid_default" msgid="8467525402622138547">"AndroidHotspot"</string>
 
@@ -547,7 +547,7 @@
   <string name="dock_audio_summary_none" msgid="289909253741048784">"Telefon není vložen do doku"</string>
   <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Nastavení připojeného doku"</string>
   <string name="dock_not_found_title" msgid="3290961741828952424">"Dok nebyl nalezen"</string>
-  <string name="dock_not_found_text" msgid="3035260358985111855">"Chcete-li konfigurovat zvuk doku, musí v něm být telefon vložen."</string>
+  <string name="dock_not_found_text" msgid="3035260358985111855">"Chcete-li nastavit zvuk doku, musí v něm být telefon vložen."</string>
   <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Zvuk při vkládání do doku"</string>
   <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Přehrát zvuk při vkládání nebo vyjímání telefonu z doku"</string>
   <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Nepřehrávat zvuk při vkládání nebo vyjímání telefonu z doku"</string>
@@ -605,6 +605,7 @@
   <string name="build_number" msgid="3075795840572241758">"Číslo sestavení"</string>
   <string name="mod_version">Verze modifikace</string>
   <string name="mod_version_default">Neznámý</string>
+  <string name="build_date">Datum sestavení</string>
 
   <string name="device_info_not_available" msgid="8062521887156825182">"Nedostupný"</string>
   <string name="device_status_activity_title" msgid="1411201799384697904">"Stav"</string>
@@ -821,6 +822,7 @@
   <string name="lockpattern_settings_enable_title" msgid="6920616873671115281">"Požadovat gesto"</string>
   <string name="lockpattern_settings_enable_summary" msgid="1165707416664252167">"Obrazovku je třeba odemknout gestem ruky."</string>
   <string name="lockpattern_settings_enable_visible_pattern_title" msgid="104851667540971729">"Viditelné gesto"</string>
+  <string name="lockpattern_settings_enable_error_path_title">Zobrazit chybné gesto</string>
   <string name="lockpattern_settings_enable_tactile_feedback_title" msgid="972174133075372341">"Vibrační zpětná vazba"</string>
   <string name="lockpattern_settings_choose_lock_pattern" msgid="1652352830005653447">"Nastavení bezpečnostního gesta"</string>
   <string name="lockpattern_settings_change_lock_pattern" msgid="1123908306116495545">"Změna bezpečnostního gesta"</string>
@@ -848,7 +850,7 @@
   <string name="applications_settings_summary" msgid="2714215108369119717">"Správa aplikací a klávesových zkratek rychlého spuštění"</string>
   <string name="applications_settings_header" msgid="6018266337275422250">"Nastavení aplikací"</string>
   <string name="install_applications" msgid="4872012136210802181">"Neznámé zdroje"</string>
-  <string name="install_unknown_applications" msgid="6612824788917283662">"Povoluje instalaci aplikací, které nepocházejí ze služby Market."</string>
+  <string name="install_unknown_applications" msgid="6612824788917283662">"Povoluje instalaci aplikací, které nepocházejí ze služby Obchod Play."</string>
   <string name="install_all_warning" msgid="1923717607319933741">"Váš telefon a osobní údaje jsou zranitelnější vůči útoku aplikací z neznámých zdrojů. Vyjadřujete souhlas, že nesete osobní odpovědnost za jakékoli škody způsobené na vašem telefonu nebo za ztrátu dat v důsledku používání těchto aplikací."</string>
   <string name="application_info_label" msgid="1150486628158409543">"Informace o aplikaci"</string>
   <string name="storage_label" msgid="8700867073480107253">"Úložiště"</string>
@@ -1086,7 +1088,7 @@
   <string name="accessibility_service_security_warning" msgid="4066258132331302670">"Tato služba usnadnění může shromažďovat veškerý text, který napíšete, včetně osobních údajů a čísel kreditních karet, nikoli však hesla. Může také protokolovat vaše interakce s uživatelským rozhraním. Služba pochází z aplikace <xliff:g id="ACCESSIBILITY_SERVICE_NAME">%1$s</xliff:g>. Chcete tuto službu usnadnění použít?"</string>
   <string name="accessibility_service_disable_warning" msgid="8930591383312775132">"Deaktivovat usnadnění?"</string>
   <string name="accessibility_service_no_apps_title" msgid="898893674114288531">"Nebyly nalezeny žádné aplikace týkající se usnadnění"</string>
-  <string name="accessibility_service_no_apps_message" msgid="2450056749545404807">"Nejsou nainstalovány žádné aplikace týkající se usnadnění."\n\n"Prostřednictvím služby Android Market můžete do svého zařízení stáhnout čtečku obrazovky."\n\n"Kliknutím na tlačítko OK čtečku obrazovky nainstalujete."</string>
+  <string name="accessibility_service_no_apps_message" msgid="2450056749545404807">"Nejsou nainstalovány žádné aplikace týkající se usnadnění."\n\n"Prostřednictvím služby Obchod Play můžete do svého zařízení stáhnout čtečku obrazovky."\n\n"Kliknutím na tlačítko OK čtečku obrazovky nainstalujete."</string>
 
   <string name="accessibility_power_button_category" msgid="8545885236482339928">"Tlačítko vypínání"</string>
   <string name="accessibility_power_button_ends_call" msgid="7698764194501089533">"Tlačítko vypínání ukončuje hovor"</string>
@@ -1197,7 +1199,7 @@
   <string name="tts_demo" msgid="405357591189935876">"Toto je příklad syntézy řeči. This is an example of speech synthesis."</string>
   <string name="tts_settings_changed_demo" msgid="4926518555912328645">"Nastavení se změnilo. Toto je příklad současného znění."</string>
   <string name="tts_engine_error" msgid="5513288178403066867">"Vybraný modul pro syntézu řeči nelze spustit"</string>
-  <string name="tts_engine_error_config" msgid="5820525416624637313">"Konfigurovat"</string>
+  <string name="tts_engine_error_config" msgid="5820525416624637313">"Nastavení"</string>
   <string name="tts_engine_error_reselect" msgid="3071453963296013376">"Vyberte jiný modul"</string>
   <string name="tts_engine_security_warning" msgid="8786238102020223650">"Modul pro syntézu řeči může shromažďovat veškerý mluvený text, včetně osobních dat jako jsou hesla nebo čísla kreditních karet. Je založen na modulu <xliff:g id="TTS_PLUGIN_ENGINE_NAME">%s</xliff:g>. Chcete modul pro syntézu řeči aktivovat?"</string>
   <string name="tts_engines_section" msgid="7515470972378742429">"Moduly"</string>
@@ -1247,7 +1249,7 @@
   <string name="vpn_reconnect_from_lost" msgid="2442844155623372118">"Připojení bylo přerušeno. Chcete se znovu připojit?"</string>
   <string name="vpn_unknown_server_dialog_msg" msgid="3080742299823671319">"Název serveru nelze přeložit. Chcete zkontrolovat nastavení názvu serveru?"</string>
   <string name="vpn_challenge_error_dialog_msg" msgid="6174901754230038601">"Chybná žádost. Chcete zkontrolovat své tajné nastavení?"</string>
-  <string name="vpn_secret_not_set_dialog_msg" msgid="8013052814131532765">"V konfiguraci této sítě VPN chybí několik tajných nastavení. Chcete své tajné nastavení zkontrolovat?"</string>
+  <string name="vpn_secret_not_set_dialog_msg" msgid="8013052814131532765">"V nastavení této sítě VPN chybí nastavení zabezpečení. Chcete nastavení zabezpečení zkontrolovat?"</string>
   <string name="vpn_auth_error_dialog_msg" msgid="5476820106624807614">"Zadané uživatelské jméno nebo heslo je nesprávné. Chcete to zkusit znovu?"</string>
   <string name="vpn_remote_hung_up_error_dialog_msg" msgid="1566946015052633150">"Server ukončil spojení. Zadané uživatelské jméno nebo heslo je možná nesprávné. Chcete to zkusit znovu?"</string>
   <string name="vpn_remote_ppp_hung_up_error_dialog_msg" msgid="5135958511128503344">"Server ukončil spojení. Je možné, že máte spuštěný firewall, který brání připojení k serveru. Chcete to zkusit znovu?"</string>
@@ -1528,4 +1530,46 @@
   <string name="wimax_settings_summary" msgid="3207355006084135453">"Nastavení a správa sítě 4G a modemu"</string>
   <string name="status_wimax_mac_address" msgid="8390791848661413416">"Adresa MAC sítě 4G"</string>
   <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Další aktualizace systému"</string>
+
+  <string name ="finger_enrollment">Registrace otisku prstu</string>
+  <string name ="start_finger_enrollment_summary">Provede registraci otisku prstu pro použití v zámku obrazovky nebo jiných aplikací</string>
+  <string name="lockfinger_unlock_set_unlock_launch_picker_summary">Zámek obrazovky na gesto, otisk prstu, PIN nebo heslo</string>
+  <string name="lockfinger_unlock_set_unlock_launch_picker_change_summary">Změnit nebo zrušit nastavení pro gesto, otisk prstu, PIN nebo heslo</string>
+  <string name="lockfinger_unlock_set_unlock_finger_title">Otiskem prstu</string>
+  <string name="lockfinger_unlock_set_unlock_finger_summary">Odemknutí obrazovky otiskem prstu</string>
+  <string name="lockfinger_finger_settings_title">Odemknutí obrazovky otiskem prstu</string>
+  <string name="lockfinger_set_finger_unlock_title">Nastavit odemknutí otiskem prstu</string>
+  <string name="lockfinger_change_finger_unlock_title">Změnit odemknutí otiskem prstu</string>
+  <string name="lockfinger_toggle_unlock_finger_title">Vyžadovat otisk prstu</string>
+  <string name="lockfinger_toggle_unlock_finger_summary">Otisk prstu musí být použit pro odemknutí obrazovky</string>
+  <string name="lockfinger_dbadmin_title">Správa True Suite</string>
+  <string name="lockfinger_unlock_disable_lock_finger_summary">Odebrat otisk prstu</string>
+  <string name="unlock_change_lock_finger_title">Změnit otisk prstu</string>
+  <string name="lockpassword_finger_set_toast">Otisk prstu nastaven</string>
+  <string name="lockpattern_change_lock_finger_label">Změnit otisk prstu</string>
+  <string name="lockfinger_semaphore_failure_toast">Selhal přístup k senzoru</string>
+  <string name="lockfinger_enrollment_succeeded_toast">Registrace provedena.</string>
+  <string name="lockfinger_tsm_library_not_available_toast">Nelze načíst knihovnu TSM\u2026 Nelze pokračovat!</string>
+  <string name="lockfinger_enrollment_canceled_toast">Registrace zrušena.</string>
+  <string name="lockfinger_enrollment_timeout_toast">Vypršel čas pro registraci.</string>
+  <string name="lockfinger_enrollment_unknown_error_toast">Neznámá chyba.\nPravděpodobně selhalo připojení.</string>
+  <string name="lockfinger_enrollment_failure_default_toast">Registrace nedokončena. Chyba č. %d.</string>
+  <string name="lockfinger_enrollment_database_full">Registrace nedokončena. Databáze je plná.</string>
+  <string name="lockfinger_dbadmin_failure_default_toast">Operace nad databází správy selhala: chyba č. %d.</string>
+  <string name="lockfinger_ui_timeout_header">Časový limit vypršel!</string>
+  <string name="lockfinger_too_many_bad_swipes_header">Přiliš mnoho chybných vzorků!</string>
+  <string name="lockfinger_lockout_countdown_footer">Zkuste to znovu za %d vteřin.</string>
+
+  <string name="increasing_ring_title">Zvyšování hlasitosti vyzvánění</string>
+  <string name="checkbox_increasing_ring">Povolit zvyšování hlasitosti vyzvánění</string>
+  <string name="increasing_ring_min_volume_title">Počáteční hlasitost vyzvání</string>
+  <string name="increasing_ring_volume_notice">Poznámka:\nPokud je počáteční hlasitost nastavena na větší úroveň než hlasitost vyzvánění, bude jako hlasitost použita hlasitost vyzvánění.</string>
+  <string name="increasing_ring_interval_title">Interval zvyšování</string>
+  <string name="increasing_ring_interval_eachring">Pro každé zvonění</string>
+  <string name="increasing_ring_interval_half_second">0,5 sekundy</string>
+  <string name="increasing_ring_interval_1second">1 sekunda</string>
+  <string name="increasing_ring_interval_2seconds">2 sekundy</string>
+  <string name="increasing_ring_interval_3seconds">3 sekundy</string>
+  <string name="increasing_ring_interval_5seconds">5 sekund</string>
+  <string name="increasing_ring_interval_10seconds">10 sekund</string>
 </resources>
