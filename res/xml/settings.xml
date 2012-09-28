@@ -162,16 +162,15 @@
         </com.android.settings.IconPreferenceScreen>
 		-->
         
-        <!-- Nemus Launcher -->
+        <!-- Holo Launcher -->
         
         <com.android.settings.IconPreferenceScreen
             settings:icon="@drawable/ic_settings_cmlauncher"
-            android:title="@string/settings_nemuslauncher"
-            android:key="zeamlauncher_settings">
+            android:title="@string/settings_hololauncher">
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetPackage="com.nemustech.launcher"
-                android:targetClass="com.nemustech.spareparts.SettingMainActivity"/>
+                android:targetPackage="com.mobint.hololauncher"
+                android:targetClass="com.mobint.hololauncher.SettingsActivity"/>
         </com.android.settings.IconPreferenceScreen>
         
         
