@@ -3171,6 +3171,7 @@ found in the list of installed applications.</string>
 	<string name="settings_ics_bluetooth">Bluetooth</string>
 	<string name="settings_zeamlauncher">Zeam Launcher</string>
 	<string name="settings_nemuslauncher">Nemus Launcher</string>
+	<string name="settings_hololauncher">Holo Launcher</string>
 	
 	<string name="performance_settings_title_head">Performance</string>
 	<string name="themes_settings">Themes</string>
