@@ -1430,4 +1430,28 @@
     <string name="increasing_ring_interval_3seconds">3 sekundy</string>
     <string name="increasing_ring_interval_5seconds">5 sekúnd</string>
     <string name="increasing_ring_interval_10seconds">10 sekúnd</string>
+
+<!-- icsified settings -->
+    <string name="settings_ics_system">SYSTÉMOVÉ NASTAVENIA</string>
+    <string name="settings_ics_radio">BEZDRÔTOVÉ PRIPOJENIA A SIETE</string>
+    <string name="settings_radio_more">Ďaľšie...</string>
+    <string name="settings_ics_device">NASTAVENIE ZARIADENIA</string>
+    <string name="settings_ics_personal">OSOBNÉ NASTAVENIA</string>
+    <string name="settings_ics_system_cap">SYSTÉMOVÉ NASTVENIA</string>
+    <string name="power_usage_summary_text">Batéria</string>
+     <string name="settings_ics_wifi">Wifi</string>
+     <string name="settings_ics_bluetooth">Bluetooth</string>
+	<string name="settings_zeamlauncher">Zeam Launcher</string>
+	<string name="settings_nemuslauncher">Nemus Launcher</string>
+	<string name="settings_hololauncher">Holo Launcher</string>
+
+	<string name="performance_settings_title_head">Výkon</string>
+	<string name="themes_settings">Témy</string>
+	<string name="settings_ics_interface">ROZHRANIE</string>
+	<string name="settings_ics_cmsystem">Systém</string>
+	<string name="settings_ics_lockscreen">Obrazovka uzamknutia</string>
+	<string name="settings_ics_lednotification">LED Upozrnenia</string>
+	<string name="gingerdx_changelog_title">Zoznam zmien GingerDX</string>
+	<string name="gingerdx_changelog_summary">Stiahnutie Zoznamu zmien, GingerDX a AlfsAddon</string>
+    
 </resources>
