@@ -1435,9 +1435,9 @@
     <string name="settings_ics_system">SYSTÉMOVÉ NASTAVENIA</string>
     <string name="settings_ics_radio">BEZDRÔTOVÉ PRIPOJENIA A SIETE</string>
     <string name="settings_radio_more">Ďaľšie...</string>
-    <string name="settings_ics_device">NASTAVENIE ZARIADENIA</string>
+    <string name="settings_ics_device">NASTAVENIA ZARIADENIA</string>
     <string name="settings_ics_personal">OSOBNÉ NASTAVENIA</string>
-    <string name="settings_ics_system_cap">SYSTÉMOVÉ NASTVENIA</string>
+    <string name="settings_ics_system_cap">SYSTÉMOVÉ NASTAVENIA</string>
     <string name="power_usage_summary_text">Batéria</string>
      <string name="settings_ics_wifi">Wifi</string>
      <string name="settings_ics_bluetooth">Bluetooth</string>
@@ -1450,7 +1450,7 @@
 	<string name="settings_ics_interface">ROZHRANIE</string>
 	<string name="settings_ics_cmsystem">Systém</string>
 	<string name="settings_ics_lockscreen">Obrazovka uzamknutia</string>
-	<string name="settings_ics_lednotification">LED Upozrnenia</string>
+	<string name="settings_ics_lednotification">LED Upozornenia</string>
 	<string name="gingerdx_changelog_title">Zoznam zmien GingerDX</string>
 	<string name="gingerdx_changelog_summary">Stiahnutie Zoznamu zmien, GingerDX a AlfsAddon</string>
     
