@@ -372,7 +372,6 @@
     <string name="wifi_menu_advanced" msgid="7522252991919573664">"高级"</string>
     <string name="wifi_menu_connect" msgid="4996220309848349408">"连接到网络"</string>
     <string name="wifi_menu_forget" msgid="8736964302477327114">"不保存网络"</string>
-    <string name="wifi_menu_forget_all">不保存所有网络</string>
     <string name="wifi_menu_modify" msgid="2068554918652440105">"修改网络"</string>
     <string name="wifi_ssid" msgid="641393708309146745">"网络 SSID"</string>
     <string name="wifi_security" msgid="6603611185592956936">"安全性"</string>
@@ -397,7 +396,6 @@
     <string name="wifi_secured_with_status" msgid="6489317496506267302">"<xliff:g id="WIFI_STATUS">%2$s</xliff:g>，通过 <xliff:g id="WIFI_SECURITY">%1$s</xliff:g> 进行保护"</string>
     <string name="wifi_connect" msgid="1076622875777072845">"连接"</string>
     <string name="wifi_forget" msgid="8168174695608386644">"不保存"</string>
-    <string name="wifi_forget_all">不保存所有网络</string>
     <string name="wifi_save" msgid="3331121567988522826">"保存"</string>
     <string name="wifi_cancel" msgid="6763568902542968964">"取消"</string>
     <string name="wifi_advanced_titlebar" msgid="5419052271935350999">"高级"</string>
