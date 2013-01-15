@@ -868,6 +868,8 @@
     <string name="wifi_menu_connect">Connect to network</string>
     <!-- Menu option to delete a Wi-Fi network -->
     <string name="wifi_menu_forget">Forget network</string>
+    <!-- Menu option to delete all stored Wi-Fi networks -->
+    <string name="wifi_menu_forget_all">Forget all networks</string>
     <!-- Menu option to modify a Wi-Fi network configuration -->
     <string name="wifi_menu_modify">Modify network</string>
 
@@ -918,6 +920,8 @@
     <string name="wifi_connect">Connect</string>
     <!-- Button label to delete a Wi-Fi network -->
     <string name="wifi_forget">Forget</string>
+    <!-- Button label to delete all Wi-Fi networks -->
+    <string name="wifi_forget_all">Forget All</string>
     <!-- Button label to save a Wi-Fi network configuration -->
     <string name="wifi_save">Save</string>
     <!-- Button label to dismiss the dialog -->
@@ -3154,4 +3158,26 @@ found in the list of installed applications.</string>
     <string name="increasing_ring_interval_3seconds">3 seconds</string>
     <string name="increasing_ring_interval_5seconds">5 seconds</string>
     <string name="increasing_ring_interval_10seconds">10 seconds</string>
+    
+    <!-- icsified settings -->
+    <string name="settings_ics_system">SYSTEM</string>
+    <string name="settings_ics_radio">WIRELESS &amp; NETWORKS</string>
+    <string name="settings_radio_more">More...</string>
+    <string name="settings_ics_device">DEVICE</string>
+    <string name="settings_ics_personal">PERSONAL</string>
+    <string name="settings_ics_system_cap">SYSTEM</string>
+    <string name="power_usage_summary_text">Battery</string>
+	<string name="settings_ics_wifi">Wifi</string>
+	<string name="settings_ics_bluetooth">Bluetooth</string>
+	<string name="settings_zeamlauncher">Zeam Launcher</string>
+	<string name="settings_nemuslauncher">Nemus Launcher</string>
+	
+	<string name="performance_settings_title_head">Performance</string>
+	<string name="themes_settings">Themes</string>
+	<string name="settings_ics_interface">INTERFACE</string>
+	<string name="settings_ics_cmsystem">System</string>
+	<string name="settings_ics_lockscreen">Lockscreen</string>
+	<string name="settings_ics_lednotification">LED Notifications</string>
+	<string name="gingerdx_changelog_title">GingerDX Changelog</string>
+	<string name="gingerdx_changelog_summary">Changelog, GingerDX &amp; AlfsAddon Download</string>
 </resources>
