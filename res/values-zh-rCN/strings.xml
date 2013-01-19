@@ -372,6 +372,7 @@
     <string name="wifi_menu_advanced" msgid="7522252991919573664">"高级"</string>
     <string name="wifi_menu_connect" msgid="4996220309848349408">"连接到网络"</string>
     <string name="wifi_menu_forget" msgid="8736964302477327114">"不保存网络"</string>
+    <string name="wifi_menu_forget_all">不保存所有网络</string>
     <string name="wifi_menu_modify" msgid="2068554918652440105">"修改网络"</string>
     <string name="wifi_ssid" msgid="641393708309146745">"网络 SSID"</string>
     <string name="wifi_security" msgid="6603611185592956936">"安全性"</string>
@@ -396,6 +397,7 @@
     <string name="wifi_secured_with_status" msgid="6489317496506267302">"<xliff:g id="WIFI_STATUS">%2$s</xliff:g>，通过 <xliff:g id="WIFI_SECURITY">%1$s</xliff:g> 进行保护"</string>
     <string name="wifi_connect" msgid="1076622875777072845">"连接"</string>
     <string name="wifi_forget" msgid="8168174695608386644">"不保存"</string>
+    <string name="wifi_forget_all">不保存所有网络</string>
     <string name="wifi_save" msgid="3331121567988522826">"保存"</string>
     <string name="wifi_cancel" msgid="6763568902542968964">"取消"</string>
     <string name="wifi_advanced_titlebar" msgid="5419052271935350999">"高级"</string>
@@ -1465,4 +1467,40 @@
 
     <!-- Unlock finger settings screen, change unlock finger screen countdown hint on bottom of screen when the screen is locked out -->
     <string name="lockfinger_lockout_countdown_footer">请在 %d 秒内重试。</string>
+    <string name="increasing_ring_title">渐变铃声</string>
+    <string name="checkbox_increasing_ring">启用渐变铃声</string>
+    <string name="increasing_ring_min_volume_title">响铃开始的音量</string>
+    <string name="increasing_ring_volume_notice">"提醒:
+如果开始音量比设定的音量高,铃声将使用当前设定音量."</string>
+    <string name="increasing_ring_interval_title">音量增加间隔</string>
+    <string name="increasing_ring_interval_eachring">每个铃声</string>
+    <string name="increasing_ring_interval_half_second">0.5秒</string>
+    <string name="increasing_ring_interval_1second">1秒</string>
+    <string name="increasing_ring_interval_2seconds">2秒</string>
+    <string name="increasing_ring_interval_3seconds">3秒</string>
+    <string name="increasing_ring_interval_5seconds">5秒</string>
+    <string name="increasing_ring_interval_10seconds">10秒</string>
+
+<!-- icsify -->
+    <string name="settings_ics_system">系统</string>
+    <string name="settings_ics_radio">无线 &amp; 网络</string>
+    <string name="settings_radio_more">更多...</string>
+    <string name="settings_ics_device">设备</string>
+    <string name="settings_ics_personal">个人</string>
+    <string name="settings_ics_system_cap">系统</string>
+    <string name="power_usage_summary_text">电量</string>
+    <string name="settings_ics_wifi">Wifi</string>
+    <string name="settings_ics_bluetooth">蓝牙</string>
+    <string name="settings_zeamlauncher">Zeam启动器设置</string>
+    <string name="settings_nemuslauncher">Nemus启动器设置</string>
+    <string name="settings_hololauncher">Holo启动器设置</string>
+    <string name="performance_settings_title_head">性能</string>
+    <string name="themes_settings">主题</string>
+    <string name="settings_ics_interface">界面</string>
+    <string name="settings_ics_cmsystem">系统</string>
+    <string name="settings_ics_lockscreen">锁屏</string>
+    <string name="settings_ics_lednotification">LED通知</string>
+
+    <string name="gingerdx_changelog_title">GingerDX更新日志</string>
+    <string name="gingerdx_changelog_summary">更新日志 &amp; GingerDX下载</string>
 </resources>
