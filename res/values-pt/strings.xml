@@ -53,7 +53,7 @@
   <string name="font_size_save" msgid="3450855718056759095">"OK"</string>
   <string name="sdcard_setting" product="nosdcard" msgid="8281011784066476192">"Armaz. USB"</string>
   <string name="sdcard_setting" product="default" msgid="5922637503871474866">"Cartão SD"</string>
-  <string name="battery_info_status_label" msgid="8109155295509700309">"Status da bateria:"</string>
+  <string name="battery_info_status_label" msgid="8109155295509700309">"Estado da bateria:"</string>
   <string name="battery_info_power_label" msgid="7465140230991349382">"Tomada de alimentação:"</string>
   <string name="battery_info_scale_label" msgid="3649763192389778437">"Escala da bateria:"</string>
   <string name="battery_info_level_label" msgid="8706526709307788737">"Nível da bateria:"</string>
@@ -160,7 +160,7 @@
   <string name="radio_info_ppp_received_label" msgid="3345184342444878849">"PPP recebido:"</string>
   <string name="radio_info_gsm_service_label" msgid="2082332114596916985">"Serviço GSM:"</string>
   <string name="radio_info_signal_strength_label" msgid="1931937920896925766">"Potência do sinal:"</string>
-  <string name="radio_info_call_status_label" msgid="4896238900685510883">"Status da chamada:"</string>
+  <string name="radio_info_call_status_label" msgid="4896238900685510883">"Estado da chamada:"</string>
   <string name="radio_info_ppp_sent_label" msgid="5009102250704375687">"PPP enviado:"</string>
   <string name="radio_info_radio_resets_label" msgid="9211343458143291617">"Redefinições de rádio:"</string>
   <string name="radio_info_message_waiting_label" msgid="6981842420058672207">"Mensagem em espera:"</string>
@@ -360,7 +360,7 @@
   <string name="wifi_ssid" msgid="641393708309146745">"SSID da rede"</string>
   <string name="wifi_security" msgid="6603611185592956936">"Segurança"</string>
   <string name="wifi_signal" msgid="5514120261628065287">"Potência do sinal"</string>
-  <string name="wifi_status" msgid="4824568012414605414">"Status"</string>
+  <string name="wifi_status" msgid="4824568012414605414">"Estado"</string>
   <string name="wifi_speed" msgid="3526198708812322037">"Velocidade do link"</string>
   <string name="wifi_ip_address" msgid="1440054061044402918">"Endereço IP"</string>
   <string name="wifi_eap_method" msgid="8529436133640730382">"Método EAP"</string>
@@ -503,7 +503,7 @@
   <string name="sim_lock_failed" msgid="6676748290838006404">"Não é possível alterar o estado de bloqueio do cartão SIM."\n"PIN possivelmente incorreto."</string>
   <string name="sim_enter_ok" msgid="6475946836899218919">"OK"</string>
   <string name="sim_enter_cancel" msgid="6240422158517208036">"Cancelar"</string>
-  <string name="device_info_settings" msgid="475872867864762157">"Status do telefone"</string>
+  <string name="device_info_settings" msgid="475872867864762157">"Estado do telefone"</string>
   <string name="system_update_settings_list_item_title" msgid="3342887311059985961">"Atualizações do sistema"</string>
   <string name="system_update_settings_list_item_summary" msgid="3853057315907710747">
   </string>
@@ -513,8 +513,8 @@
   <string name="kernel_version" msgid="9192574954196167602">"Versão do kernel"</string>
   <string name="build_number" msgid="3075795840572241758">"Número da versão"</string>
   <string name="device_info_not_available" msgid="8062521887156825182">"Não disponível"</string>
-  <string name="device_status_activity_title" msgid="1411201799384697904">"Status"</string>
-  <string name="device_status" msgid="607405385799807324">"Status"</string>
+  <string name="device_status_activity_title" msgid="1411201799384697904">"Estado"</string>
+  <string name="device_status" msgid="607405385799807324">"Estado"</string>
   <string name="device_status_summary" msgid="2599162787451519618">"Número de telefone, sinal etc."</string>
   <string name="storage_settings" msgid="4211799979832404953">"Armazenamento"</string>
   <string name="storage_settings_title" msgid="8746016738388094064">"Configurações de armazenamento"</string>
@@ -568,7 +568,7 @@
   <string name="unmount_inform_text" product="default" msgid="1904212716075458402">"O cartão SD será desconectado."</string>
   <string name="sd_ejecting_title" msgid="8824572198034365468">"Desconectando"</string>
   <string name="sd_ejecting_summary" msgid="2028753069184908491">"Desconexão em andamento"</string>
-  <string name="battery_status_title" msgid="9159414319574976203">"Status da bateria"</string>
+  <string name="battery_status_title" msgid="9159414319574976203">"Estado da bateria"</string>
   <string name="battery_level_title" msgid="2965679202786873272">"Nível da bateria"</string>
   <string name="apn_settings" msgid="3743170484827528406">"APNs"</string>
   <string name="apn_edit" msgid="1354715499708424718">"Editar ponto de acesso"</string>
@@ -661,7 +661,7 @@
   <string name="assisted_gps_enabled" msgid="8751899609589792803">"Usar servidor para auxiliar GPS (desmarque para reduzir o uso da rede)"</string>
   <string name="assisted_gps_disabled" msgid="6982698333968010748">"Usar servidor para auxiliar GPS (desmarque para aprimorar o desempenho do GPS)"</string>
   <string name="about_settings" msgid="1743378368185371685">"Sobre o telefone"</string>
-  <string name="about_settings_summary" msgid="3302263393543848667">"Ver informações legais, status do telefone, versão do software"</string>
+  <string name="about_settings_summary" msgid="3302263393543848667">"Ver informações legais, estado do telefone, versão do software"</string>
   <string name="legal_information" msgid="5769301644270604095">"Informações legais"</string>
   <string name="contributors_title" msgid="5917703088825286504">"Colaboradores"</string>
   <string name="copyright_title" msgid="865906688917260647">"Direitos autorais"</string>
@@ -1328,7 +1328,7 @@
   <string name="autoEnableSyncWithWifiDescription">Habilitar sincronização quando Wi-Fi está ligado</string>
   <string name="autoDisableSyncWithWifiDescription">Desabilitar sincronização quando Wi-Fi está desligado</string>
   <string name="ringModeVibrateAsOnDescription">Mostrar Som como ligado quando está somente vibração</string>
-  <string name="monitorDataRoamingDescription">Status de dados vermelho se roaming esta ligado</string>
+  <string name="monitorDataRoamingDescription">Estado de dados vermelho se roaming esta ligado</string>
   <string name="autoEnableBluetoothWithPowerDescription">Ligar Bluetooth quando Energia está conectada</string>
   <string name="autoDisableBluetoothWithPowerDescription">Bluetooth desligado quando Energia está desconectada</string>
   <string name="autoEnableWifiWithPowerDescription">Ligar Wi-Fi quando Energia está conectada</string>
@@ -1366,7 +1366,7 @@
   <string name="bluetooth_connection_notif_message">Toque para conectar a \u0022%1$s\u0022</string>
   <string name="bluetooth_connection_permission_request">Requisição de conexão bluetooth</string>
   <string name="bluetooth_connection_dialog_text">Você deseja conectar a \u0022%1$s\u0022?</string>
-  <string name="profile_statusbar">Indicador da Barra de Status</string>
+  <string name="profile_statusbar">Indicador da Barra de notificações</string>
   <string name="profile_connectionoverrides_title">Substituir conexão</string>
   <string name="profile_connectionoverrides_summary">Toque para definir como ativado/desativado</string>
   <string name="bluetooth_fast_connect_on">Conexões Bluetooth velozes</string>
@@ -1464,13 +1464,13 @@
     <string name="power_usage_summary_text">Bateria</string>
     <string name="settings_ics_wifi">Wi-Fi</string>
     <string name="settings_ics_bluetooth">Bluetooth</string>
-     
-	<string name="performance_settings_title_head">Desempenho</string>
+	
+    <string name="performance_settings_title_head">Desempenho</string>
     <string name="themes_settings">Temas</string>
     <string name="settings_ics_interface">INTERFACE</string>
     <string name="settings_ics_cmsystem">Sistema</string>
     <string name="settings_ics_lockscreen">Tela de bloqueio</string>
-	<string name="settings_ics_lednotification">Notificações do LED</string>
+    <string name="settings_ics_lednotification">Notificações do LED</string>
     <string name="gingerdx_changelog_title">Lista de mudanças GingerDX</string>
     <string name="gingerdx_changelog_summary">Lista de mudanças, Download GingerDX</string>
 </resources>
