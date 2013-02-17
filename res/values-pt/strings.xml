@@ -1438,4 +1438,39 @@
   <string name="lockfinger_too_many_bad_swipes_header">Dedos deslizados incorretamente muitas vezes!</string>
   <!-- Unlock finger settings screen, change unlock finger screen countdown hint on bottom of screen when the screen is locked out -->
   <string name="lockfinger_lockout_countdown_footer">Tente novamente em %d segundos.</string>
+
+    <string name="increasing_ring_title">Aumento de volume do toque</string>
+    <!-- Sound settings screen, the caption of the checkbox for making incoming calls increas in volume -->
+    <string name="checkbox_increasing_ring">Habilitar aumento de volume</string>
+    <!-- Sound settings screen, the title of the volume bar to adjust the minimum increasing ring volume -->
+    <string name="increasing_ring_min_volume_title">Volume do início do toque</string>
+    <string name="increasing_ring_volume_notice">"Note:/nComo o volume inicial será maior que o volume do toque, o mesmo será tocado usando o volume normal."</string>
+    <string name="increasing_ring_interval_title">Intervalo do aumento</string>
+    <string name="increasing_ring_interval_eachring">Em cada toque</string>
+    <string name="increasing_ring_interval_half_second">0.5 segundo</string>
+    <string name="increasing_ring_interval_1second">1 segundo</string>
+    <string name="increasing_ring_interval_2seconds">2 segundos</string>
+    <string name="increasing_ring_interval_3seconds">3 segundos</string>
+    <string name="increasing_ring_interval_5seconds">5 segundos</string>
+    <string name="increasing_ring_interval_10seconds">10 segundos</string>
+    
+    <!-- icsified settings -->
+    <string name="settings_ics_system">SISTEMA</string>
+    <string name="settings_ics_radio">REDES SEM FIO E OUTRAS</string>
+    <string name="settings_radio_more">Mais…</string>
+    <string name="settings_ics_device">DISPOSITIVO</string>
+    <string name="settings_ics_personal">PESSOAL</string>
+    <string name="settings_ics_system_cap">SISTEMA</string>
+    <string name="power_usage_summary_text">Bateria</string>
+    <string name="settings_ics_wifi">Wi-Fi</string>
+    <string name="settings_ics_bluetooth">Bluetooth</string>
+     
+	<string name="performance_settings_title_head">Desempenho</string>
+    <string name="themes_settings">Temas</string>
+    <string name="settings_ics_interface">INTERFACE</string>
+    <string name="settings_ics_cmsystem">Sistema</string>
+    <string name="settings_ics_lockscreen">Tela de bloqueio</string>
+	<string name="settings_ics_lednotification">Notificações do LED</string>
+    <string name="gingerdx_changelog_title">Lista de mudanças GingerDX</string>
+    <string name="gingerdx_changelog_summary">Lista de mudanças, Download GingerDX</string>
 </resources>
