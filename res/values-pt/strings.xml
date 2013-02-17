@@ -1444,7 +1444,7 @@
     <string name="checkbox_increasing_ring">Habilitar aumento de volume</string>
     <!-- Sound settings screen, the title of the volume bar to adjust the minimum increasing ring volume -->
     <string name="increasing_ring_min_volume_title">Volume do início do toque</string>
-    <string name="increasing_ring_volume_notice">"Note:\nComo o volume inicial será maior que o volume do toque, o mesmo será tocado usando o volume normal."</string>
+    <string name="increasing_ring_volume_notice">"Note:\nComo o volume inicial será maior\nque o volume do toque, o mesmo\nserá tocado usando o volume normal."</string>
     <string name="increasing_ring_interval_title">Intervalo do aumento</string>
     <string name="increasing_ring_interval_eachring">Em cada toque</string>
     <string name="increasing_ring_interval_half_second">0.5 segundo</string>
